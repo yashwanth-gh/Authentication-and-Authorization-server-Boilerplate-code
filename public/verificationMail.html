@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Tint of yellow */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            border: 4px double #ffa6a6;
+            box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .verification-code {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff8f8f;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            border: 1px solid #ff5733;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .footer {
+
+            margin-top: 20px;
+            color: #999;
+            font-size: 14px;
+			text-align: left;
+
+        }
+
+        .footer a {
+            color: #ff5733;
+            text-decoration: none;
+        }
+
+        .image {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to {{platformName}}!</h1>
+        <img src="https://img.freepik.com/free-vector/enter-otp-concept-illustration_114360-7887.jpg?t=st=1710848138~exp=1710851738~hmac=57b333c35601fcfaa29fff14526fe55a5dc39278d7f6036d5242cff902ed85cd&w=740" alt="Illustration" class="image">
+		<p>Hi, {{userName}}</p>
+        <p>We’re excited to have you on board. To complete your account setup, please use the verification code below:</p>
+        <div class="verification-code">{{OTP}}</div>
+        <p>Please enter this code in the website. If you didn’t sign up for {{platformName}}, you can ignore this email.</p>
+        <p>Thank you for choosing us!</p>
+        <div class="footer">
+            <p>Best Regards,<br>{{senderName}}</p>
+        </div>
+    </div>
+</body>
+</html>

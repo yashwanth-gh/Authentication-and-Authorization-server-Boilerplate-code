@@ -1,0 +1,55 @@
+{
+  "name": "google-oauth2.0-oidc",
+  "version": "1.0.0",
+  "description": "test google authentication",
+  "main": "dist/index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "rimraf dist && npx tsc",
+    "prestart": "npm run build",
+    "start": "node -r dotenv/config dist/index.js",
+    "preserve": "npm run build",
+    "serve": "concurrently \"npx tsc -w\" \"nodemon -r dotenv/config dist/index.js\""
+  },
+  "keywords": [
+    "nodejs",
+    "oauth2.0",
+    "google"
+  ],
+  "author": "Yashwanth B M",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "bcrypt": "^5.1.1",
+    "concurrently": "^8.2.2",
+    "connect-mongo": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "express-session": "^1.18.0",
+    "express-validator": "^7.0.1",
+    "googleapis": "^131.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.2.0",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.9.12",
+    "qs": "^6.11.2",
+    "rimraf": "^5.0.5"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/cookie-parser": "^1.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/express-session": "^1.18.0",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/mongoose": "^5.11.97",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.11.15",
+    "@types/nodemailer": "^6.4.14",
+    "nodemon": "^3.0.3",
+    "prettier": "^3.2.4",
+    "typescript": "^5.3.3"
+  }
+}

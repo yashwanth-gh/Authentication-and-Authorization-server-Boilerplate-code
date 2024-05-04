@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Verification Request</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Tint of yellow */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            border: 4px double #ffa6a6;
+            box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .verification-code {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff8f8f;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            border: 1px solid #ff5733;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            color: #999;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .footer a {
+            color: #ff5733;
+            text-decoration: none;
+        }
+
+        .image {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Verification Request</h1>
+        <img src="https://img.freepik.com/free-vector/forms-concept-illustration_114360-4947.jpg?t=st=1711729939~exp=1711733539~hmac=42ae6c0337ba5c8af8eb3f9887525f9d3c791381dbad5b630b0787601b2dac19&w=740" alt="Illustration" class="image">
+        <p>Dear Admin,</p>
+        <p>A new admin account has been created on {{platformName}}. As per our security protocols, we kindly request you to verify this new admin account.</p>
+        <p>The details of the new admin are as follows:</p>
+        <ul>
+            <li>Full Name: {{newAdminName}}</li>
+            <li>Email: {{newAdminEmail}}</li>
+        </ul>
+        <p>Please take the necessary steps to verify the authenticity of this account.</p>
+        <p>Thank you for your attention to this matter.</p>
+        <div class="footer">
+            <p>Best Regards,<br>{{senderName}}</p>
+        </div>
+    </div>
+</body>
+</html>

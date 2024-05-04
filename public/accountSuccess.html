@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Tint of yellow */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            border: 4px double #ffa6a6;
+            box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .verification-code {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff8f8f;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            border: 1px solid #ff5733;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            color: #999;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .footer a {
+            color: #ff5733;
+            text-decoration: none;
+        }
+
+        .image {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>👋 Welcome</h1>
+        <img src="https://img.freepik.com/free-vector/verified-concept-illustration_114360-5138.jpg?t=st=1711730673~exp=1711734273~hmac=0615cb6c651af40814a15fa601645112a5a7773ecf6b9e80960cbe85b909dea4&w=740" alt="Illustration" class="image">
+        <p>Hi {{userName}},</p>
+        <p>Welcome to {{platformName}}! We're thrilled to have you on board.</p>
+        <p>We are pleased to inform you that your account has been successfully verified. You now have full access to all the features and functionalities of our platform.</p>
+        <p>Feel free to explore and enjoy your experience with us!</p>
+        <p>If you have any questions or need assistance, please don't hesitate to contact our support team.</p>
+        <p>Thank you for choosing {{platformName}}!</p>
+        <div class="footer">
+            <p>Best Regards,<br>{{senderName}}</p>
+        </div>
+    </div>
+</body>
+</html>
